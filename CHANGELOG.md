@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.2
+- Fix (grave): il passo Spedizione del checkout classico veniva bloccato con qualsiasi corriere diverso dal ritiro in negozio ("scegli un negozio"); il controllo ora vale solo se il corriere scelto è il ritiro.
+
 ## 1.0.1 — 2026-10-29
 - Fix (grave): il corriere "Ritiro in negozio" non compariva al checkout (PrestaShop scarta i corrieri di modulo senza fasce). Ora il corriere ha `need_range`, una fascia ampia di peso e di prezzo e righe `delivery` a 0 per ogni zona; il costo resta quello del modulo.
 - Aggiornamento da 1.0.0: `upgrade-1.0.1` ripara il corriere esistente; le zone aggiunte o riattivate dopo vengono coperte (hook `actionObjectZoneAddAfter`/`UpdateAfter`).
