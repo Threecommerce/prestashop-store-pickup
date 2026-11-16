@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.3 — 2026-11-16
+- Fix: la pagina di configurazione del modulo andava in errore ("Undefined array key is_default") con più lingue attive e la modalità debug accesa: le lingue passate al form hanno ora il flag `is_default`.
+
 ## 1.0.2
 - Fix (grave): il passo Spedizione del checkout classico veniva bloccato con qualsiasi corriere diverso dal ritiro in negozio ("scegli un negozio"); il controllo ora vale solo se il corriere scelto è il ritiro.
 
